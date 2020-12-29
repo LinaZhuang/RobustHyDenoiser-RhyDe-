@@ -28,7 +28,7 @@ pa = 10;
 p =10;  %dimension of subspace 
 %RhyDe is extremely robust to the subspace dimension overestimation. 
 %For real images, without prior knowledge, you may set a larger value for p.
-draw = 1;
+draw = 0; %draw is set to 1, if you want to show how RhyDe works during iteration
 
 t1=clock;
 [EZ_est,S_est, Rw_save] =  RhyDe(img_noisy,pa,p,draw);
